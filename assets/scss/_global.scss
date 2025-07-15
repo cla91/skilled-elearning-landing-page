@@ -1,0 +1,72 @@
+@use "mixin";
+
+body {
+  background: var(--body-bg-color);
+  background-attachment: fixed;
+  font-family: var(--primary-font-family);
+  color: var(--text-color);
+  overflow-x: hidden !important;
+  @include mixin.text-preset-6;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    @include mixin.text-preset-5;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+}
+
+h1 {
+  @include mixin.text-preset-2;
+  @media screen and (min-width: 1024px) {
+    @include mixin.text-preset-1;
+  }
+}
+h2 {
+  @include mixin.text-preset-4;
+  @media screen and (min-width: 1024px) {
+    @include mixin.text-preset-3;
+  }
+}
+h3 {
+  @include mixin.text-preset-8;
+  @media screen and (min-width: 1024px) {
+    @include mixin.text-preset-4;
+  }
+}
+
+a {
+  @include mixin.text-preset-7;
+  color: var(--pink-600);
+  text-decoration: none;
+  display: block;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  padding-inline: 3.2rem;
+  padding-block: 1.6rem;
+  border-radius: 2.8rem;
+  color: var(--white);
+  @media (min-width: 768px) {
+    padding-inline: clamp(2.4rem, 1.486rem + 1.19vw, 3.2rem);
+    padding-block: clamp(1.2rem, 0.743rem + 0.595vw, 1.6rem);
+  }
+}
+.max-width-container {
+  max-width: calc(112rem + 16rem);
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: clamp(2rem, -0.29rem + 6.107vw, 4.4rem);
+  @media (min-width: 768px) {
+    padding-inline: clamp(4.4rem, 0.286rem + 5.357vw, 8rem);
+  }
+}

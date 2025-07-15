@@ -1,0 +1,30 @@
+.full-bleed {
+  background-color: var(--blue-900);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.footer {
+  background-color: var(--blue-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2.4rem;
+}
+.footer__logo {
+  max-width: 8rem;
+  @media screen and (min-width: 768px) {
+    width: clamp(8rem, 4.457rem + 4.613vw, 11.1rem);
+    max-width: 100%;
+  }
+}
+.footer__cta {
+  background: var(--gradient-purple);
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
+}

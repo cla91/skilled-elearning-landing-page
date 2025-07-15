@@ -1,0 +1,16 @@
+:root {
+  --blue-900: hsl(233, 54%, 16%);
+  --blue-600: hsl(234, 25%, 52%);
+  --pink-600: hsl(341, 92%, 62%);
+  --pink-300: hsl(341, 100%, 83%);
+  --grey: hsl(232, 10%, 56%);
+  --white: hsl(0, 0%, 100%);
+  --gradient-pink: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --gradient-purple: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+
+  --primary-font-family: "Plus Jakarta Sans", sans-serif;
+
+  --text-color: var(--grey);
+  --heading-color: var(--blue-900);
+  --body-bg-color: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}

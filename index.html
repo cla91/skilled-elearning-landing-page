@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header max-width-container">
+    <img src="assets/images/logo-dark.svg" alt="skilled logo" class="header__logo">
+    <nav>
+      <a href="#" class="header__cta btn">Get Started</a>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero max-width-container">
+      <div class="hero__content ">
+        <h1 class="hero__title">Maximize skill, minimize budget</h1>
+        <p class="hero__description">Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.</p>
+        <a href="#" class="hero__cta btn">Get Started</a>
+      </div>
+      <div class="hero__img-wrapper">
+
+        <picture>
+          <source srcset="assets/images/image-hero-desktop.webp 1x, assets/images/image-hero-desktop@2x.webp 2x"
+            media="(min-width: 1024px)" type="image/webp">
+          <source srcset="assets/images/image-hero-desktop.png 1x, assets/images/image-hero-desktop@2x.png 2x"
+            media="(min-width: 1024px)">
+
+          <source srcset="assets/images/image-hero-tablet.webp 1x, assets/images/image-hero-tablet@2x.webp 2x"
+            media="(min-width: 768px) and (max-width: 1023px)" type="image/webp">
+          <source srcset="assets/images/image-hero-tablet.png 1x, assets/images/image-hero-tablet@2x.png 2x"
+            media="(min-width: 768px) and (max-width: 1023px)">
+
+          <source srcset="assets/images/image-hero-mobile.webp 1x, assets/images/image-hero-mobile@2x.webp 2x"
+            media="(max-width: 767px)" type="image/webp">
+          <source srcset="assets/images/image-hero-mobile.png 1x, assets/images/image-hero-mobile@2x.png 2x"
+            media="(max-width: 767px)">
+
+          <img src="assets/images/image-hero-desktop.png" alt="Young woman working on laptop" class=" hero__img">
+        </picture>
+      </div>
+    </section>
+    <section class="courses max-width-container">
+      <h2 class="courses__title">Check out our most popular courses!</h2>
+      <div class="courses__item">
+        <img src="assets/images/icon-animation.svg" alt="" class="item__icon">
+        <h3 class="item__title">Animation</h3>
+        <p class="item__description">Learn the latest animation techniques to create stunning motion
+          design and captivate your audience.</p>
+        <a href="#" class="item__link">Get Started</a>
+      </div>
+      <div class="courses__item">
+        <img src="assets/images/icon-design.svg" alt="" class="item__icon">
+        <h3 class="item__title">Design</h3>
+        <p class="item__description">Create beautiful, usable interfaces to help shape the future of
+          how the web looks.</p>
+        <a href="#" class="item__link">Get Started</a>
+      </div>
+      <div class="courses__item">
+        <img src="assets/images/icon-photography.svg" alt="" class="item__icon">
+        <h3 class="item__title">Photography</h3>
+        <p class="item__description">Explore critical fundamentals like lighting, composition, and focus
+          to capture exceptional photos.</p>
+        <a href="#" class="item__link">Get Started</a>
+      </div>
+      <div class="courses__item">
+        <img src="assets/images/icon-crypto.svg" alt="" class="item__icon">
+        <h3 class="item__title">Crypto</h3>
+        <p class="item__description">All you need to know to get started investing in crypto. Go from beginner
+          to advanced with this 54 hour course.</p>
+        <a href="#" class="item__link">Get Started</a>
+      </div>
+      <div class="courses__item">
+        <img src="assets/images/icon-business.svg" alt="" class="item__icon">
+        <h3 class="item__title">Business</h3>
+        <p class="item__description">A step-by-step playbook to help you start, scale, and sustain your business
+          without outside investment.</p>
+        <a href="#" class="item__link">Get Started</a>
+      </div>
+    </section>
+  </main>
+  <div class="full-bleed">
+
+    <footer class="footer max-width-container">
+      <img src="assets/images/logo-light.svg" alt="skilled logo" class="footer__logo">
+      <a href="#" class="footer__cta btn">Get started</a>
+    </footer>
+  </div>
+</body>
+
+</html>

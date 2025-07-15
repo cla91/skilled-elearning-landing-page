@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: clamp(1.6rem, 0.837rem + 2.036vw, 2.4rem);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.header__logo {
+  max-width: 8rem;
+  @media screen and (min-width: 768px) {
+    width: clamp(8rem, 4.457rem + 4.613vw, 11.1rem);
+    max-width: 100%;
+  }
+}
+.header__cta {
+  background-color: var(--blue-900);
+  &:hover {
+    background-color: var(--blue-600);
+  }
+}
